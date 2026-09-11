@@ -80,10 +80,14 @@ export const Transformation: React.FC<TransformationProps> = ({ onOpenEnrollment
 
             <div className="aspect-[3/4] sm:aspect-[4/5] rounded-3xl overflow-hidden bg-[#111111] border border-white/10 shadow-2xl relative group">
               <img
-                src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?q=80&w=1200&auto=format&fit=crop"
+                src="/images/transformation-800.webp"
+                srcSet="/images/transformation-480.webp 480w, /images/transformation-800.webp 800w, /images/transformation-1200.webp 1200w"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 40vw"
                 alt="Atleta em foco extremo e determinação durante treino VittaFit"
                 className="w-full h-full object-cover grayscale contrast-125 brightness-90 group-hover:scale-104 transition-transform duration-700"
                 loading="lazy"
+                width="800"
+                height="1000"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent opacity-90" />
 

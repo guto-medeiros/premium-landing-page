@@ -2,6 +2,8 @@
   "name": "VittaFit",
   "description": "Acompanhamento fitness online personalizado para quem quer treinar com mais clareza, consistência e direção.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
 

@@ -14,10 +14,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrollment }) => {
       {/* Cinematic Large Fitness Photography (Occupying 60-70% of the visual stage) */}
       <div className="absolute top-0 right-0 w-full lg:w-[68%] h-full pointer-events-none z-0 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1800&auto=format&fit=crop"
+          src="/images/hero-1200.webp"
+          srcSet="/images/hero-640.webp 640w, /images/hero-1200.webp 1200w, /images/hero-1800.webp 1800w"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 68vw"
           alt="Atleta em preparação mental de alto rendimento — VittaFit"
           className="w-full h-full object-cover object-center filter contrast-[1.18] brightness-[0.72] grayscale-[30%] scale-105 transition-transform duration-1000 ease-out"
           loading="eager"
+          fetchPriority="high"
+          width="1800"
+          height="1200"
         />
 
         {/* Sophisticated Dark Integration Gradients */}
@@ -109,7 +114,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrollment }) => {
 
             {/* Subheadline */}
             <p className="text-lg sm:text-2xl text-[#A6A6A0] font-normal leading-relaxed max-w-xl mb-8 sm:mb-10">
-              Seu treino precisa de direção. Sua evolução também.
+              Planejamento individualizado, suporte contínuo e progressão calculada para transformar consistência diária em evolução real.
             </p>
 
             {/* CTA Group & Contextual Link */}

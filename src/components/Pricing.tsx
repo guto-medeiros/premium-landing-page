@@ -1,20 +1,12 @@
 import React from 'react';
 import { ArrowRight, Check, ShieldCheck, Zap } from 'lucide-react';
+import { PROGRAM_INCLUSIONS, PROGRAM_PRICE } from '../data';
 
 interface PricingProps {
   onOpenEnrollment: () => void;
 }
 
 export const Pricing: React.FC<PricingProps> = ({ onOpenEnrollment }) => {
-  const inclusions = [
-    'Avaliação inicial',
-    'Treino personalizado',
-    'Orientações',
-    'Acompanhamento semanal',
-    'Ajustes',
-    'Suporte online',
-  ];
-
   return (
     <section
       id="oferta"
@@ -92,7 +84,7 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenEnrollment }) => {
                   ESTÁ INCLUSO NO PROGRAMA
                 </span>
 
-                {inclusions.map((item) => (
+                {PROGRAM_INCLUSIONS.map((item) => (
                   <div key={item} className="flex items-center gap-3 text-sm sm:text-base font-semibold text-[#F5F5F0]">
                     <div className="w-5 h-5 rounded-full bg-[#080808] border border-white/10 flex items-center justify-center shrink-0">
                       <Check className="w-3.5 h-3.5 text-[#B8F23D] stroke-[3]" />
@@ -109,14 +101,14 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenEnrollment }) => {
                 </span>
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl sm:text-6xl font-black font-mono tracking-tight text-[#F5F5F0]">
-                    R$ 149
+                    {PROGRAM_PRICE.currency} {PROGRAM_PRICE.amount}
                   </span>
                   <span className="text-xs font-mono font-bold text-[#A6A6A0] uppercase">
-                    PAGAMENTO ÚNICO
+                    {PROGRAM_PRICE.frequency}
                   </span>
                 </div>
                 <p className="text-xs text-[#A6A6A0]/60 font-mono mt-2">
-                  Sem mensalidades automáticas ou cobranças surpresa.
+                  {PROGRAM_PRICE.note}
                 </p>
               </div>
 

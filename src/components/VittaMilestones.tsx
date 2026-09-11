@@ -1,44 +1,7 @@
 import React from 'react';
+import { VITTA_MILESTONES } from '../data';
 
 export const VittaMilestones: React.FC = () => {
-  const milestones = [
-    {
-      code: '01 / 30',
-      tag: 'CAOS → DIREÇÃO',
-      title: 'Diagnóstico & Direção',
-      desc: 'Fim dos treinos aleatórios. Avaliação inicial completa e entrega da estratégia sob medida.',
-      status: 'START',
-    },
-    {
-      code: '07 / 30',
-      tag: 'ADAPTAÇÃO',
-      title: 'Primeira Quebra de Inércia',
-      desc: 'Primeira semana de execução com checagem de cargas, postura e alinhamento de rotina.',
-      status: 'RITMO',
-    },
-    {
-      code: '15 / 30',
-      tag: 'CONSISTÊNCIA',
-      title: 'Ajuste Fino de Meio de Ciclo',
-      desc: 'O treino deixa de ser esforço mental e passa a ser rotina consolidada com ajustes precisos.',
-      status: 'PIVOT',
-    },
-    {
-      code: '21 / 30',
-      tag: 'HABITUALIDADE',
-      title: 'Autonomia & Domínio',
-      desc: 'A resistência psicológica desaparece. O corpo responde à progressão de volume.',
-      status: 'HÁBITO',
-    },
-    {
-      code: '30 / 30',
-      tag: 'EVOLUÇÃO',
-      title: 'Nova Rotina Instalada',
-      desc: 'Resultados mensuráveis, condicionamento elevado e clareza para manter a consistência.',
-      status: 'RESULTADO',
-    },
-  ];
-
   return (
     <section
       id="jornada"
@@ -67,7 +30,7 @@ export const VittaMilestones: React.FC = () => {
 
         {/* 5-Step Editorial Timeline Spread in Dark Surface */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-6 pt-4">
-          {milestones.map((m, index) => (
+          {VITTA_MILESTONES.map((m, index) => (
             <div
               key={m.code}
               className="flex flex-col justify-between p-6 rounded-2xl bg-[#171717] border border-white/10 hover:border-[#B8F23D]/60 transition-all duration-300 group shadow-lg"

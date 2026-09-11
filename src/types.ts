@@ -1,28 +1,37 @@
 export interface BenefitItem {
   id: string;
-  number: string;
+  num: string;
   title: string;
-  subtitle: string;
-  description: string;
+  tag: string;
+  desc: string;
+  impact: string;
+  imageUrl: string;
 }
 
 export interface StepItem {
-  number: string;
-  title: string;
+  num: string;
+  day: string;
+  action: string;
+  headline: string;
   description: string;
-  durationBadge?: string;
+  meta: string;
 }
 
 export interface TestimonialItem {
   id: string;
+  num: string;
   name: string;
-  age: number;
-  role: string;
+  age?: number;
   city: string;
   quote: string;
+  subquote?: string;
   tag: string;
-  avatarUrl: string;
-  statHighlight?: string;
+  avatarUrl?: string;
+  program: string;
+  consistency?: string;
+  status?: string;
+  badge?: string;
+  featured?: boolean;
 }
 
 export interface FaqItem {
@@ -32,8 +41,17 @@ export interface FaqItem {
 }
 
 export interface MilestoneItem {
-  day: string;
-  phase: string;
-  label: string;
-  description: string;
+  code: string;
+  tag: string;
+  title: string;
+  desc: string;
+  status: string;
+}
+
+export interface ProgramPrice {
+  currency: string;
+  amount: number;
+  frequency: string;
+  periodDays: number;
+  note?: string;
 }

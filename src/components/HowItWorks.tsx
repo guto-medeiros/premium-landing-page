@@ -1,46 +1,12 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { HOW_IT_WORKS_STEPS } from '../data';
 
 interface HowItWorksProps {
   onOpenEnrollment: () => void;
 }
 
 export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenEnrollment }) => {
-  const steps = [
-    {
-      num: '01',
-      day: 'DAY 01',
-      action: 'OBJETIVO',
-      headline: 'Avaliação & Anamnese',
-      description: 'Você preenche nosso questionário aprofundado sobre rotina, objetivos, dores e disponibilidade de tempo.',
-      meta: 'Etapa Inicial',
-    },
-    {
-      num: '02',
-      day: 'DAY 07',
-      action: 'PLANO',
-      headline: 'Estratégia Sob Medida',
-      description: 'Receba seu planejamento estruturado com divisão de grupos musculares, séries, repetições e orientações em vídeo.',
-      meta: 'Até 48h úteis',
-    },
-    {
-      num: '03',
-      day: 'DAY 15',
-      action: 'TREINO',
-      headline: 'Execução & Suporte Ativo',
-      description: 'Você treina com total segurança. Qualquer dúvida sobre movimento ou desconforto é ajustada diretamente pelo suporte.',
-      meta: 'Ajuste Fino',
-    },
-    {
-      num: '04',
-      day: 'DAY 30',
-      action: 'EVOLUÇÃO',
-      headline: 'Métricas & Consolidação',
-      description: 'Checagem final de evolução de cargas, tônus muscular e bem-estar. Sua nova rotina está instalada.',
-      meta: 'Ciclo Concluído',
-    },
-  ];
-
   return (
     <section
       id="como-funciona"
@@ -73,7 +39,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenEnrollment }) => {
           <div className="hidden lg:block absolute top-12 left-8 right-8 h-px bg-white/10 -z-0" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 relative z-10">
-            {steps.map((step, idx) => (
+            {HOW_IT_WORKS_STEPS.map((step, idx) => (
               <div
                 key={step.num}
                 className="flex flex-col justify-between p-6 sm:p-7 rounded-3xl bg-[#171717] border border-white/10 hover:border-[#B8F23D]/50 transition-all duration-300 group shadow-lg"
