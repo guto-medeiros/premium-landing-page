@@ -18,17 +18,17 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenEnrollment }) => {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-12 mb-16 border-b border-white/10">
           <div>
             <span className="text-xs font-mono font-bold tracking-widest text-[#B8F23D] uppercase block mb-3">
-              JORNADA DOS 30 DIAS // PROCESSO
+              COMO FUNCIONA
             </span>
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#F5F5F0] tracking-[-0.04em] uppercase font-display leading-[1.05] sm:leading-[0.95]">
-              OBJETIVO <span className="text-white/30">→</span> PLANO <br className="hidden sm:block" />
-              <span className="text-white/30 sm:hidden">→</span> TREINO <span className="text-white/30">→</span> <span className="text-[#B8F23D]">EVOLUÇÃO</span>
+            <h2 className="text-[clamp(2.75rem,6.5vw,5.5rem)] font-normal text-[#F5F5F0] tracking-[0.01em] uppercase font-heading leading-[0.88] break-words">
+              DO PRIMEIRO TREINO <br />
+              <span className="text-[#B8F23D]">À PRIMEIRA EVOLUÇÃO.</span>
             </h2>
           </div>
 
           <div className="text-left lg:text-right max-w-sm">
-            <p className="text-base text-[#A6A6A0] leading-relaxed font-normal">
-              Um caminho linear, claro e sem burocracias. Cada etapa tem hora marcada para acontecer no seu ciclo.
+            <p className="text-base text-[#A6A6A0] leading-relaxed font-normal font-sans">
+              Um caminho linear, claro e sem burocracias. Cada etapa foi desenhada para transformar intenção em consistência real.
             </p>
           </div>
         </div>
@@ -61,11 +61,11 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenEnrollment }) => {
                     {idx < 3 ? <span className="text-white/30">→</span> : <span className="text-[#B8F23D] font-black">★</span>}
                   </div>
 
-                  <h3 className="text-xl font-extrabold text-[#F5F5F0] tracking-tight mb-3">
+                  <h3 className="text-2xl sm:text-3xl font-normal text-[#F5F5F0] tracking-[0.015em] font-heading uppercase leading-[0.95] mb-3 break-words">
                     {step.headline}
                   </h3>
 
-                  <p className="text-sm text-[#A6A6A0] leading-relaxed">
+                  <p className="text-sm text-[#A6A6A0] leading-relaxed font-sans">
                     {step.description}
                   </p>
                 </div>
@@ -84,17 +84,16 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenEnrollment }) => {
           <div className="flex items-center gap-3">
             <span className="w-2 h-2 rounded-full bg-[#B8F23D]" />
             <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#A6A6A0]">
-              PROGRAMA 100% ONLINE E ASSÍNCRONO
+              PROGRAMA 100% ONLINE E PERSONALIZADO
             </span>
           </div>
 
           <button
             type="button"
             onClick={onOpenEnrollment}
-            className="inline-flex items-center gap-2 text-sm font-extrabold uppercase tracking-wider text-[#B8F23D] hover:text-[#c6f94a] transition-all cursor-pointer"
+            className="btn-premium-primary px-8 py-3.5 rounded-full text-xs font-bold font-sans uppercase tracking-wider gap-2 cursor-pointer shadow-lg"
           >
-            <span>Iniciar no Day 01</span>
-            <ArrowRight className="w-4 h-4 text-[#B8F23D]" />
+            <span>COMEÇAR MEUS 30 DIAS →</span>
           </button>
         </div>
 

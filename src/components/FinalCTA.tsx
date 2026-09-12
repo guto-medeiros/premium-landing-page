@@ -21,16 +21,28 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenEnrollment }) => {
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center relative z-10">
         
-        {/* Gigantic Black Typography */}
-        <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-[7rem] xl:text-[8.5rem] font-black tracking-[-0.05em] text-[#080808] uppercase font-display leading-[0.93] sm:leading-[0.9] max-w-5xl mx-auto mb-8 select-none">
+        {/* Emotional and simple conclusion headline */}
+        <h2 className="text-[clamp(3.25rem,8.5vw,7.5rem)] font-normal tracking-[0.01em] text-[#080808] uppercase font-heading leading-[0.85] max-w-5xl mx-auto mb-6 select-none break-words">
           PRONTO PARA <br />
-          COMEÇAR?
+          TREINAR COM DIREÇÃO?
         </h2>
 
-        {/* Small Subtle Text */}
-        <p className="text-lg sm:text-2xl text-[#080808]/85 font-medium max-w-xl mx-auto mb-12">
-          Seu próximo treino pode começar hoje. Sem improviso, com método.
+        {/* Subtitle */}
+        <p className="text-base sm:text-xl text-[#080808]/85 font-normal max-w-xl mx-auto mb-10 font-sans">
+          Transforme os próximos 30 dias em uma rotina que você realmente consiga manter.
         </p>
+
+        {/* Value Reinforcement Pills */}
+        <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-12 max-w-2xl mx-auto">
+          {['30 DIAS DE CICLO', 'ACOMPANHAMENTO INDIVIDUAL', 'AJUSTES SEMANAIS', 'GARANTIA TOTAL DE 7 DIAS'].map((tag) => (
+            <span
+              key={tag}
+              className="px-3.5 py-1.5 rounded-full bg-[#080808]/10 text-[#080808] font-mono text-xs font-bold uppercase tracking-wider"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
 
         {/* Big Solid Black CTA Button */}
         <div>
@@ -38,21 +50,17 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenEnrollment }) => {
             type="button"
             id="final-cta-button"
             onClick={onOpenEnrollment}
-            className="inline-flex items-center justify-center gap-3 px-10 sm:px-16 py-5 sm:py-6 rounded-full bg-[#080808] text-[#F5F5F0] text-sm sm:text-base font-black uppercase tracking-wider hover:bg-[#171717] hover:scale-104 active:scale-98 transition-all duration-200 shadow-2xl cursor-pointer group"
+            className="inline-flex items-center justify-center gap-3 px-10 sm:px-16 py-5 sm:py-6 rounded-full bg-[#080808] text-[#F5F5F0] text-sm sm:text-base font-bold font-sans uppercase tracking-wider hover:bg-[#171717] hover:scale-104 active:scale-98 transition-all duration-200 shadow-2xl cursor-pointer group"
           >
-            <span>COMEÇAR MEU PROGRAMA</span>
+            <span>COMEÇAR MEUS 30 DIAS →</span>
             <ArrowRight className="w-5 h-5 text-[#B8F23D] transition-transform duration-200 group-hover:translate-x-1.5" />
           </button>
         </div>
 
-        {/* Editorial Footnote */}
-        <div className="mt-14 flex items-center justify-center gap-4 text-xs font-mono text-[#080808]/70 uppercase tracking-wider">
-          <span>VF / 30</span>
-          <span>•</span>
-          <span>30 DIAS DE PROTOCOLO</span>
-          <span>•</span>
-          <span>R$ 149 PAGAMENTO ÚNICO</span>
-        </div>
+        {/* Microtext Scarcity */}
+        <p className="mt-6 text-xs sm:text-sm font-mono text-[#080808]/75 font-medium">
+          Vagas limitadas para manter a qualidade do acompanhamento individual.
+        </p>
 
       </div>
     </section>

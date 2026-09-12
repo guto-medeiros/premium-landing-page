@@ -17,7 +17,7 @@ export const VittaMilestones: React.FC = () => {
               <span>•</span>
               <span>CONCEITO CENTRAL</span>
             </div>
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#F5F5F0] tracking-tight uppercase font-display">
+            <h2 className="text-[clamp(2.75rem,6.5vw,5.5rem)] font-normal text-[#F5F5F0] tracking-[0.01em] uppercase font-heading leading-[0.88] break-words">
               30 DIAS. <span className="text-[#B8F23D]">UMA NOVA ROTINA.</span>
             </h2>
           </div>
@@ -50,11 +50,11 @@ export const VittaMilestones: React.FC = () => {
                   {m.tag}
                 </span>
 
-                <h3 className="text-lg font-extrabold text-[#F5F5F0] tracking-tight mb-3 group-hover:text-[#B8F23D] transition-colors">
+                <h3 className="text-2xl sm:text-3xl font-normal text-[#F5F5F0] tracking-[0.015em] font-heading uppercase leading-[0.95] mb-3 group-hover:text-[#B8F23D] transition-colors break-words">
                   {m.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-[#A6A6A0] leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#A6A6A0] leading-relaxed font-sans">
                   {m.desc}
                 </p>
               </div>
@@ -73,13 +73,13 @@ export const VittaMilestones: React.FC = () => {
         </div>
 
         {/* Typographic Poster Statement: TREINE. AJUSTE. EVOLUA. */}
-        <div className="mt-20 pt-16 border-t border-white/10 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="mt-24 pt-20 border-t border-white/10 relative">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-8">
-              <div className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-black tracking-[-0.04em] text-[#F5F5F0] uppercase font-display leading-[0.95]">
+              <div className="text-[clamp(3.5rem,8.5vw,7.5rem)] font-normal tracking-[0.01em] text-[#F5F5F0] uppercase font-heading leading-[0.85] break-words">
                 <span>TREINE.</span> <br />
-                <span className="text-[#A6A6A0]/40 hover:text-[#F5F5F0] transition-colors">AJUSTE.</span> <br />
-                <span className="text-[#F5F5F0] underline decoration-[#B8F23D] decoration-4 sm:decoration-8 underline-offset-8">
+                <span className="text-[#A6A6A0]/50 transition-colors">AJUSTE.</span> <br />
+                <span className="text-[#B8F23D]">
                   EVOLUA.
                 </span>
               </div>
@@ -87,15 +87,11 @@ export const VittaMilestones: React.FC = () => {
 
             <div className="lg:col-span-4 flex flex-col justify-end lg:border-l lg:border-white/10 lg:pl-10">
               <span className="text-xs font-mono font-bold tracking-widest text-[#B8F23D] uppercase block mb-3">
-                MANIFESTO VITTAFIT®
+                O MANIFESTO
               </span>
-              <p className="text-base sm:text-lg text-[#A6A6A0] leading-relaxed font-normal">
-                Você não precisa de 2 horas por dia ou de treinos exaustivos que te deixam quebrado. Você precisa de método, progressão controlada e supervisão para os ajustes certos.
+              <p className="text-base sm:text-lg text-[#A6A6A0] leading-relaxed font-normal font-sans">
+                Você não precisa de treinos exaustivos nem de horas perdidas na academia. Você precisa de um plano com direção, acompanhamento constante e a certeza de que cada semana constrói consistência real.
               </p>
-              <div className="mt-6 flex items-center gap-3 font-mono text-xs text-[#A6A6A0]">
-                <span className="w-2 h-2 rounded-full bg-[#B8F23D]" />
-                <span>CICLO OFICIAL DE 30 DIAS</span>
-              </div>
             </div>
           </div>
         </div>

@@ -15,17 +15,17 @@ export const Testimonials: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 mb-16 border-b border-white/10">
           <div>
             <span className="text-xs font-mono font-bold tracking-widest text-[#B8F23D] uppercase block mb-3">
-              EXPERIÊNCIAS REAIS // HISTÓRIAS DE CICLO
+              HISTÓRIAS ILUSTRATIVAS DO PROGRAMA
             </span>
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#F5F5F0] tracking-tight uppercase font-display">
+            <h2 className="text-[clamp(2.75rem,6.5vw,5.5rem)] font-normal text-[#F5F5F0] tracking-[0.01em] uppercase font-heading leading-[0.88] break-words">
               QUEM TEM PLANO, <br />
               <span className="text-[#B8F23D]">TREINA DIFERENTE.</span>
             </h2>
           </div>
 
           <div className="text-right hidden md:block text-xs font-mono text-[#A6A6A0] uppercase tracking-wider">
-            <span>AVALIAÇÕES DE QUEM COMPLETOU OS 30 DIAS</span>
-            <span className="block font-bold text-[#F5F5F0] mt-0.5">VF ALUMNI PROTOCOL</span>
+            <span>EXPERIÊNCIAS DEMONSTRATIVAS DO CICLO DE 30 DIAS</span>
+            <span className="block font-bold text-[#F5F5F0] mt-0.5">ACOMPANHAMENTO ONLINE</span>
           </div>
         </div>
 
@@ -42,12 +42,12 @@ export const Testimonials: React.FC = () => {
                   <span>DEPOIMENTO EM DESTAQUE // {featured.num}</span>
                 </div>
 
-                <blockquote className="text-2xl sm:text-4xl lg:text-5xl font-black text-[#F5F5F0] leading-[1.14] tracking-tight font-display">
-                  {featured.quote}
+                <blockquote className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#F5F5F0] leading-snug tracking-normal font-sans">
+                  «{featured.quote}»
                 </blockquote>
 
                 {featured.subquote && (
-                  <p className="mt-6 text-base text-[#A6A6A0] font-normal leading-relaxed">
+                  <p className="mt-6 text-sm sm:text-base text-[#A6A6A0] font-normal leading-relaxed font-sans">
                     "{featured.subquote}"
                   </p>
                 )}
@@ -68,7 +68,7 @@ export const Testimonials: React.FC = () => {
                   )}
 
                   <div>
-                    <h3 className="text-lg font-black text-[#F5F5F0] uppercase tracking-tight">
+                    <h3 className="text-xl sm:text-2xl font-normal font-heading text-[#F5F5F0] uppercase tracking-[0.02em] leading-none">
                       {featured.name}
                     </h3>
                     <p className="text-xs font-mono text-[#A6A6A0] mt-0.5">
@@ -115,14 +115,14 @@ export const Testimonials: React.FC = () => {
                   <span className="text-[#B8F23D]">{item.program}</span>
                 </div>
 
-                <blockquote className="text-xl sm:text-2xl font-bold text-[#F5F5F0] leading-snug tracking-tight mb-6">
-                  {item.quote}
+                <blockquote className="text-lg sm:text-xl font-medium text-[#F5F5F0] leading-relaxed tracking-normal mb-6 font-sans">
+                  «{item.quote}»
                 </blockquote>
               </div>
 
               <div className="pt-6 border-t border-white/10 flex items-center justify-between">
                 <div>
-                  <h4 className="text-sm font-extrabold text-[#F5F5F0] uppercase tracking-wider">
+                  <h4 className="text-lg sm:text-xl font-normal font-heading text-[#F5F5F0] uppercase tracking-[0.02em] leading-none">
                     {item.name}
                   </h4>
                   <p className="text-xs font-mono text-[#A6A6A0]">
@@ -138,6 +138,11 @@ export const Testimonials: React.FC = () => {
             </div>
           ))}
         </div>
+
+        {/* Discreet demonstrative note */}
+        <p className="mt-12 text-center text-xs font-mono text-[#A6A6A0]/60">
+          * Experiências e relatos ilustrativos demonstrando a dinâmica do acompanhamento do programa.
+        </p>
 
       </div>
     </section>

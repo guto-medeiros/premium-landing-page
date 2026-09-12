@@ -25,12 +25,12 @@ export const FAQ: React.FC = () => {
               <span>TRANSPARÊNCIA TOTAL</span>
             </div>
 
-            <h2 className="text-4xl sm:text-6xl font-black text-[#F5F5F0] tracking-tight uppercase font-display leading-[0.95] mb-6">
+            <h2 className="text-[clamp(2.75rem,6.5vw,5.5rem)] font-normal text-[#F5F5F0] tracking-[0.01em] uppercase font-heading leading-[0.88] mb-6 break-words">
               DÚVIDAS <br />
               <span className="text-[#B8F23D]">FREQUENTES.</span>
             </h2>
 
-            <p className="text-base text-[#A6A6A0] font-normal leading-relaxed max-w-sm mb-8">
+            <p className="text-base text-[#A6A6A0] font-normal leading-relaxed max-w-sm mb-8 font-sans">
               Tudo o que você precisa saber antes de iniciar seus 30 dias de acompanhamento.
             </p>
 
@@ -69,9 +69,9 @@ export const FAQ: React.FC = () => {
                       <span className="font-mono text-xs font-bold text-[#A6A6A0]/40 pt-1 group-hover:text-[#B8F23D] transition-colors">
                         {formattedIdx}
                       </span>
-                      <span className="text-lg sm:text-xl font-black text-[#F5F5F0] tracking-tight group-hover:text-[#B8F23D] transition-colors">
+                      <h3 className="text-lg sm:text-xl font-bold text-[#F5F5F0] tracking-tight group-hover:text-[#B8F23D] transition-colors font-sans leading-snug break-words">
                         {item.question}
-                      </span>
+                      </h3>
                     </div>
 
                     <div
@@ -90,7 +90,7 @@ export const FAQ: React.FC = () => {
                       id={`faq-panel-${item.id}`}
                       role="region"
                       aria-labelledby={`faq-btn-${item.id}`}
-                      className="pt-4 pl-8 sm:pl-11 pr-8 text-sm sm:text-base text-[#A6A6A0] leading-relaxed animate-in fade-in-50 duration-200"
+                      className="pt-4 pl-8 sm:pl-11 pr-8 text-sm sm:text-base text-[#A6A6A0] leading-relaxed font-sans animate-in fade-in-50 duration-200"
                     >
                       <p>{item.answer}</p>
                     </div>

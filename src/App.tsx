@@ -31,12 +31,12 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#080808] text-[#F5F5F0] font-sans antialiased flex flex-col selection:bg-[#B8F23D] selection:text-[#080808]">
+    <div className="min-h-screen bg-[#080808] text-[#F5F5F0] font-sans antialiased flex flex-col selection:bg-[#B8F23D] selection:text-[#080808] overflow-x-clip">
       {/* Navigation Header */}
       <Header onOpenEnrollment={handleOpenEnrollment} />
 
       {/* Main Content Sections */}
-      <main id="main-content" className="flex-grow">
+      <main id="main-content" className="flex-grow overflow-x-clip max-w-full">
         {/* 1. Hero Section */}
         <Hero onOpenEnrollment={handleOpenEnrollment} />
 

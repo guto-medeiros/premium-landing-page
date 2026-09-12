@@ -1,6 +1,6 @@
 {
   "name": "VittaFit",
-  "description": "Acompanhamento fitness online personalizado para quem quer treinar com mais clareza, consistência e direção.",
+  "description": "VittaFit / 30 é um programa de treino personalizado com acompanhamento e ajustes para transformar treino improvisado em uma rotina com direção.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

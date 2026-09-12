@@ -48,25 +48,23 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrollment }) => {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full relative z-10 mb-6 sm:mb-10">
         <div className="flex flex-wrap items-center justify-between gap-y-2 gap-x-6 text-[11px] font-mono tracking-widest text-[#A6A6A0] uppercase border-b border-white/10 pb-3">
           <div className="flex items-center gap-3">
-            <span className="w-2 h-2 rounded-full bg-[#B8F23D] animate-pulse" />
-            <span className="font-bold text-[#F5F5F0]">VITTAFIT PROTOCOL</span>
-            <span className="text-white/20">/</span>
-            <span>PROGRAM 01</span>
+            <span className="w-2 h-2 rounded-full bg-[#B8F23D]" />
+            <span className="font-bold text-[#F5F5F0]">VITTAFIT / 30</span>
+            <span className="text-white/20">•</span>
+            <span>PROGRAMA ONLINE</span>
           </div>
 
           <div className="hidden sm:flex items-center gap-6">
-            <span className="text-[#A6A6A0]">FORMAT / ONLINE PROGRAM</span>
+            <span className="text-[#A6A6A0]">PLANEJAMENTO PERSONALIZADO</span>
             <span className="text-white/20">•</span>
-            <span>METODOLOGIA INDIVIDUAL</span>
-            <span className="text-white/20">•</span>
-            <span className="text-[#B8F23D]">SEASON 2026</span>
+            <span className="text-[#B8F23D]">ACOMPANHAMENTO SEMANAL</span>
           </div>
 
           <div className="flex items-center gap-2">
             <span className="bg-[#171717] text-[#B8F23D] border border-white/15 px-2.5 py-0.5 rounded-xs font-bold text-[10px]">
-              01 / 30
+              30 DIAS
             </span>
-            <span className="font-semibold text-[#F5F5F0]">DIREÇÃO INICIAL</span>
+            <span className="font-semibold text-[#F5F5F0]">NOVA ROTINA</span>
           </div>
         </div>
       </div>
@@ -75,7 +73,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrollment }) => {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full relative z-10 flex-grow flex flex-col justify-center">
         
         {/* Massive Background Graphic Wordmark */}
-        <div className="select-none pointer-events-none absolute -top-12 sm:-top-16 left-0 right-0 max-w-full opacity-[0.04] overflow-hidden -z-0">
+        <div className="select-none pointer-events-none absolute -top-12 sm:-top-16 left-0 right-0 max-w-full opacity-[0.03] overflow-hidden -z-0">
           <span className="text-[20vw] font-black tracking-tighter leading-none block whitespace-nowrap font-display text-white">
             VITTAFIT
           </span>
@@ -86,59 +84,54 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrollment }) => {
           {/* Left / Typographic Monument (8 cols partially overlapping photography) */}
           <div className="lg:col-span-8 flex flex-col justify-end">
             
-            {/* Editorial Mini-kicker with Technical Coordinate */}
+            {/* 1. Kicker: VITTAFIT / 30 */}
             <div className="flex items-center gap-3 mb-4 sm:mb-6">
               <CornerDownRight className="w-4 h-4 text-[#B8F23D]" />
               <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#B8F23D]">
-                PROJETO DE TRANSFORMAÇÃO DE ROTINA
-              </span>
-              <span className="text-white/20 hidden sm:inline">|</span>
-              <span className="text-[11px] font-mono tracking-widest text-[#A6A6A0] uppercase hidden sm:inline">
-                ONLINE PROGRAM // VF-30
+                VITTAFIT / 30
               </span>
             </div>
 
-            {/* Monumental Headline */}
-            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.6rem] font-black tracking-[-0.045em] text-[#F5F5F0] leading-[0.93] sm:leading-[0.91] mb-6 sm:mb-8 uppercase font-display">
+            {/* 2. Monumental Headline: SEU TREINO PRECISA DE DIREÇÃO. */}
+            <h1 className="text-[clamp(3.5rem,9.5vw,8.25rem)] font-normal tracking-[0.01em] text-[#F5F5F0] leading-[0.85] sm:leading-[0.82] mb-6 sm:mb-8 uppercase font-heading break-words">
               SEU TREINO <br />
               PRECISA DE <br />
-              <span className="relative inline-flex flex-wrap items-center gap-2 sm:gap-4 mt-1">
-                <span className="relative z-10 text-[#B8F23D] tracking-[-0.04em]">
-                  DIREÇÃO.
-                </span>
-                <span className="inline-block text-xs sm:text-sm font-mono tracking-widest font-bold uppercase py-1 px-3 rounded-full bg-[#171717] border border-white/20 text-[#B8F23D]">
-                  VF / 30
-                </span>
+              <span className="text-[#B8F23D] tracking-[0.01em]">
+                DIREÇÃO.
               </span>
             </h1>
 
-            {/* Subheadline */}
-            <p className="text-lg sm:text-2xl text-[#A6A6A0] font-normal leading-relaxed max-w-xl mb-8 sm:mb-10">
-              Planejamento individualizado, suporte contínuo e progressão calculada para transformar consistência diária em evolução real.
+            {/* 3. Subheadline */}
+            <p className="text-base sm:text-xl text-[#A6A6A0] font-normal leading-relaxed max-w-xl mb-8 sm:mb-10 font-sans">
+              Planejamento personalizado, acompanhamento contínuo e ajustes semanais para transformar treino improvisado em uma rotina que você consegue manter.
             </p>
 
-            {/* CTA Group & Contextual Link */}
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mb-8 sm:mb-10">
+            {/* 4. CTA Group & Contextual Link */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mb-3">
               <button
                 type="button"
                 id="hero-cta-button"
                 onClick={onOpenEnrollment}
-                className="btn-premium-primary px-8 sm:px-10 py-4 sm:py-5 rounded-full text-sm sm:text-base font-black uppercase tracking-wider gap-3 cursor-pointer group shadow-2xl"
+                className="btn-premium-primary px-8 sm:px-10 py-4 sm:py-5 rounded-full text-sm sm:text-base font-bold font-sans uppercase tracking-wider gap-3 cursor-pointer group shadow-2xl"
               >
-                <span>Começar os 30 dias</span>
-                <ArrowRight className="w-4 h-4 text-[#080808] transition-transform duration-200 group-hover:translate-x-1.5" />
+                <span>COMEÇAR MEUS 30 DIAS →</span>
               </button>
 
               <a
                 href="#jornada"
                 className="inline-flex items-center gap-2 text-xs sm:text-sm font-mono font-bold text-[#A6A6A0] hover:text-[#B8F23D] transition-colors py-2 px-1 uppercase tracking-wider"
               >
-                <span>Explorar protocolo 30D</span>
+                <span>CONHECER O MÉTODO</span>
                 <span className="text-xs text-[#B8F23D]">↓</span>
               </a>
             </div>
 
-            {/* 4 Technical Campaign Tags */}
+            {/* 5. Microcopy abaixo do CTA */}
+            <p className="text-xs sm:text-sm font-mono text-[#A6A6A0] mb-8 sm:mb-10">
+              Avaliação inicial • Plano personalizado • Acompanhamento semanal
+            </p>
+
+            {/* Technical Campaign Tags */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-white/10 text-[11px] font-mono text-[#A6A6A0]">
               <div>
                 <span className="block text-[#A6A6A0]/50 text-[9px] uppercase">DURAÇÃO</span>
@@ -153,14 +146,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrollment }) => {
                 <span className="font-bold text-[#B8F23D]">PERSONALIZADO</span>
               </div>
               <div>
-                <span className="block text-[#A6A6A0]/50 text-[9px] uppercase">STATUS</span>
-                <span className="font-bold text-[#F5F5F0]">ACTIVE</span>
+                <span className="block text-[#A6A6A0]/50 text-[9px] uppercase">OBJETIVO</span>
+                <span className="font-bold text-[#F5F5F0]">ROTINA SUSTENTÁVEL</span>
               </div>
             </div>
 
           </div>
 
-          {/* Right / Overlaid Telemetry Card (4 cols) */}
+          {/* Right / Program Overview Card (4 cols) */}
           <div className="lg:col-span-4 relative mt-2 lg:mt-0">
             <div className="p-6 rounded-3xl bg-[#111111]/90 backdrop-blur-xl border border-white/15 text-[#F5F5F0] shadow-2xl">
               
@@ -168,22 +161,22 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrollment }) => {
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#B8F23D]" />
                   <span className="text-[10px] font-mono tracking-widest text-[#B8F23D] uppercase font-bold">
-                    VF / 30 • PROTOCOL
+                    VITTAFIT / 30
                   </span>
                 </div>
                 <span className="text-[10px] font-mono text-white/50 uppercase">
-                  ONLINE PROGRAM
+                  PROGRAMA ONLINE
                 </span>
               </div>
 
               <div className="space-y-4">
                 <div>
                   <span className="text-[10px] font-mono tracking-wider text-[#A6A6A0] uppercase block">
-                    GOAL
+                    FOCO DO CICLO
                   </span>
-                  <p className="text-base font-bold text-[#F5F5F0] tracking-tight">
+                  <h3 className="text-xl sm:text-2xl font-normal font-heading uppercase text-[#F5F5F0] tracking-[0.015em] leading-[0.95] mt-1 break-words">
                     Construção de Consistência Real
-                  </p>
+                  </h3>
                   <p className="text-xs text-[#A6A6A0] mt-1 leading-relaxed">
                     Sem fichas genéricas. Cada série planejada para a sua rotina e seu objetivo.
                   </p>
@@ -191,12 +184,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnrollment }) => {
 
                 <div className="grid grid-cols-2 gap-3 pt-3 border-t border-white/10">
                   <div className="p-3 rounded-2xl bg-[#171717] border border-white/5">
-                    <span className="text-xl font-black font-mono text-[#B8F23D]">01</span>
-                    <span className="block text-[9px] font-mono text-[#A6A6A0] uppercase mt-0.5">CHECKPOINT</span>
+                    <span className="text-lg font-black font-mono text-[#B8F23D]">7 DIAS</span>
+                    <span className="block text-[9px] font-mono text-[#A6A6A0] uppercase mt-0.5">AJUSTES SEMANAIS</span>
                   </div>
                   <div className="p-3 rounded-2xl bg-[#171717] border border-white/5">
-                    <span className="text-xl font-black font-mono text-[#F5F5F0]">100%</span>
-                    <span className="block text-[9px] font-mono text-[#A6A6A0] uppercase mt-0.5">ACOMPANHAMENTO</span>
+                    <span className="text-lg font-black font-mono text-[#F5F5F0]">DIRETO</span>
+                    <span className="block text-[9px] font-mono text-[#A6A6A0] uppercase mt-0.5">SUPORTE ONLINE</span>
                   </div>
                 </div>
               </div>

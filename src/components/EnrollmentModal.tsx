@@ -104,16 +104,16 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClos
         </div>
 
         {/* Modal Body */}
-        <div className="p-6 sm:p-8 overflow-y-auto">
+        <div className="p-6 sm:p-8 overflow-y-auto font-sans">
           {step === 'profile' && (
             <div>
               <span className="text-xs font-mono font-bold tracking-widest text-[#B8F23D] uppercase block mb-2">
                 PASSO 01 / 03 • SEU PERFIL
               </span>
-              <h3 id="modal-title" className="text-2xl font-extrabold text-[#F5F5F0] tracking-tight mb-2">
+              <h3 id="modal-title" className="text-3xl sm:text-4xl font-normal uppercase tracking-[0.015em] font-heading text-[#F5F5F0] mb-2 leading-[0.95] break-words">
                 Qual é o seu objetivo principal?
               </h3>
-              <p className="text-sm text-[#A6A6A0] mb-6">
+              <p className="text-sm text-[#A6A6A0] mb-6 font-sans">
                 Usamos essas informações preliminares para direcionar sua avaliação inicial.
               </p>
 
@@ -203,7 +203,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClos
               <span className="text-xs font-mono font-bold tracking-widest text-[#B8F23D] uppercase block mb-2">
                 PASSO 02 / 03 • SEUS DADOS
               </span>
-              <h3 className="text-2xl font-extrabold text-[#F5F5F0] tracking-tight mb-2">
+              <h3 className="text-3xl sm:text-4xl font-normal uppercase tracking-[0.015em] font-heading text-[#F5F5F0] mb-2 leading-[0.95] break-words">
                 Onde você quer receber seu plano?
               </h3>
               <p className="text-sm text-[#A6A6A0] mb-6">
@@ -279,7 +279,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClos
               <span className="text-xs font-mono font-bold tracking-widest text-[#B8F23D] uppercase block mb-2">
                 PASSO 03 / 03 • CONFIRMAÇÃO
               </span>
-              <h3 className="text-2xl font-extrabold text-[#F5F5F0] tracking-tight mb-2">
+              <h3 className="text-3xl sm:text-4xl font-normal uppercase tracking-[0.015em] font-heading text-[#F5F5F0] mb-2 leading-[0.95] break-words">
                 Resumo da Contratação
               </h3>
               <p className="text-sm text-[#A6A6A0] mb-6">
@@ -382,7 +382,7 @@ export const EnrollmentModal: React.FC<EnrollmentModalProps> = ({ isOpen, onClos
                 CONFIRMAÇÃO CONCLUÍDA
               </span>
 
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#F5F5F0] tracking-tight mb-3">
+              <h3 className="text-3xl sm:text-4xl font-normal uppercase tracking-[0.015em] font-heading text-[#F5F5F0] mb-3 leading-[0.95] break-words">
                 Bem-vindo à VittaFit!
               </h3>
 

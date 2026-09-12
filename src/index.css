@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-display: 'Syne', 'Space Grotesk', sans-serif;
-  --font-tech: 'Space Grotesk', sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Bebas Neue', 'Impact', sans-serif;
+  --font-display: 'Bebas Neue', 'Impact', sans-serif;
   --font-mono: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --color-dark-bg: #080808;
   --color-dark-surface: #111111;
@@ -29,15 +29,61 @@
     font-family: var(--font-sans);
     background-color: #080808;
     color: #F5F5F0;
-    overflow-x: hidden;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.01em;
+    line-height: 1.6;
   }
 
-  /* Editorial display headings */
-  h1, h2, h3, h4 {
-    letter-spacing: -0.04em;
+  /* Editorial display headings with Bebas Neue */
+  h1, h2 {
+    font-family: var(--font-heading);
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
     text-wrap: balance;
+    overflow-wrap: break-word;
+    word-break: normal;
   }
+
+  h3, h4 {
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+}
+
+/* Fluid Editorial Typography Utilities (Boosted scale with safe bounds) */
+.heading-hero {
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 9.5vw, 8rem);
+  line-height: 0.85;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
+.heading-display {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 7.5vw, 6.75rem);
+  line-height: 0.88;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
+.heading-section {
+  font-family: var(--font-heading);
+  font-size: clamp(2.75rem, 6.5vw, 5.25rem);
+  line-height: 0.88;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
+.heading-card {
+  font-family: var(--font-heading);
+  font-size: clamp(1.65rem, 3vw, 2.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
 }
 
 /* Custom Outlined Text effect for editorial emphasis */
